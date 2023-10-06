@@ -201,3 +201,42 @@ button:hover {
     }
 
 }
+
+@media screen and (max-width: 400px) {
+    .quiz-box {
+        width: 350px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+        .quiz-box header {
+            font-size: 20px;
+        }
+
+        #lose-container {
+            width: 100px;
+        }
+
+        #results {
+            justify-content: center;
+        }
+
+        #lose-container {
+            width: 350px;
+            position: relative;
+        }
+
+        #lose-image {
+            width: 350px;
+            height: 350px;
+        }
+
+        #lose-text {
+            font-size: 25px;
+        }
+
+        #win-container {
+           display:block;
+        }
+
+}
