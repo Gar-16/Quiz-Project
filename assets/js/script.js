@@ -27,7 +27,29 @@ function buildQuiz() {
     quizContainer.innerHTML = output.join('');
 }
 
-function showResults() { }
+function showResults() {
+    let answerContainers = quizContainer.querySelectorAll('.answers');
+
+    let numCorrect = 0;
+
+    quizQuestions.forEach( (currentQuestion, questionNumber) => {
+        let answerContainer = answerContainers[questionNumber];
+        let selector = `input[name=question${questionNumber}]:checked`;
+        let userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+            if(userAnswer === currentQuestion.correctAnswer){
+            numCorrect++;
+
+            answerContainers[questionNumber].style.color = 'green';
+            }
+                else{
+                answerContainers[questionNumber].style.color = 'red';
+                }
+        }
+    );
+
+    resultsContainer.innerHTML = `${numCorrect} out of ${quizQuestions.length}`;
+ }
 
 
 let quizContainer = document.getElementById('quiz');
