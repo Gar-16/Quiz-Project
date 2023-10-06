@@ -64,7 +64,7 @@ function showResults() {
 
         resultsContainer.innerHTML = `<div id="win-container">
         <img id="win-image" src="assets/images/imgbin_mario-png.png" alt="Image of Mario jumping in celebration"  height="300">
-        Congrats! You got all ${quizQuestions.length} correct!`;
+        <p id="win-text">Congrats! You got all ${quizQuestions.length} correct!</p>`;
     }
 
     else{
