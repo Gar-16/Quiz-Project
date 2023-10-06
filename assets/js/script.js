@@ -74,8 +74,8 @@ function showResults() {
         removeGetResults()
 
         resultsContainer.innerHTML = `<div id="lose-container">
-        <img id="lose-image" src="assets/images/game over.png" alt="A game over screen with the option to try again"  height="300">
-        <p id=lose-text>You got ${numCorrect} out of ${quizQuestions.length} correct</p>
+        <a href="index.html"><img id="lose-image" src="assets/images/game over.png" alt="A game over screen with the option to try again"  height="300"></a>
+        <p id="lose-text">You got ${numCorrect} out of ${quizQuestions.length} correct</p>
         </div>`;
         
     }

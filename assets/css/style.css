@@ -4,6 +4,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+/*Styling for main body of Quiz*/
+
 body {
     background-color: #4C6971;
 }
@@ -45,7 +47,9 @@ label {
     padding: 5px;
 }
 
-.get-results{
+/*Styling for results button*/
+
+.get-results {
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -53,12 +57,12 @@ label {
 
 button {
     font-weight: 500;
-        padding: 15px 30px;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        color: #151b1b;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #151b1b;
 }
 
 button:hover {
@@ -73,21 +77,78 @@ button:hover {
     padding-bottom: 20px;
 }
 
-.slide {
-    position: absolute;
-    left: 0px;  
-    top: 0px;
-    width: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.active-slide {
-    opacity: 1;
-    z-index: 2;
-}
+/*Styling for Win*/
 
 #win-container {
-display: flex;
+    display: flex;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+/*Styling for Lose*/
+
+#lose-container {
+    padding: 5px;
+}
+
+#lose-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+#lose-image {
+    cursor: pointer;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1920px) {
+
+    .quiz-box {
+        width: 800px;
+
+
+
+    }
+
+    .question,
+    .answers {
+        font-size: 25px;
+    }
+
+    .quiz-box header {
+        font-size: 25px;
+        height: 90px;
+    }
+
+    .get-results {}
+
+    button {
+        font-weight: 500;
+        padding: 25px 40px;
+        font-size: 20px;
+    }
+
+    #lose-image {
+        width: 500px;
+        height: 500px;
+    }
+
+    #lose-text {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 870px) {
+
+    .quiz-box {
+        
+    }
+
+    .question,
+    .answers {
+        font-size: 20px;
+    }
 }
