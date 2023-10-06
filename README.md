@@ -30,3 +30,18 @@ When trying to think of what to code for my second project, I was quiet stumped.
 
 ![Results](Media/Results.png)
 ![Results2](Media/results2.png)
+![Results3](Media/results3.png)
+
+## Testing
+
+### Validator Testing
+
+- HTML
+  - No errors were returned when passing through the official W3C validator
+
+![HTML Validator Results](Media/HTMLValidator.png)
+
+- CSS
+  - No errors were returned when passing through the official Jigsaw validator
+
+![CSS Validator Results](Media/CSSvalidated.png)
