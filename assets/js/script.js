@@ -27,6 +27,14 @@ function buildQuiz() {
     quizContainer.innerHTML = output.join('');
 }
 
+function removeQuiz() {
+    quizContainer.remove();
+}
+
+function removeGetResults() {
+    submitButton.remove();
+}
+
 function showResults() {
     let answerContainers = quizContainer.querySelectorAll('.answers');
 
@@ -49,11 +57,27 @@ function showResults() {
     );
 
     if(numCorrect === quizQuestions.length) {
-        resultsContainer.innerHTML = `Congrats! You got all ${quizQuestions.length} correct!`;
+
+        removeQuiz()
+
+        removeGetResults()
+
+        resultsContainer.innerHTML = `<div id="win-container">
+        <img id="win-image" src="assets/images/imgbin_mario-png.png" alt="Image of Mario jumping in celebration"  height="300">
+        Congrats! You got all ${quizQuestions.length} correct!`;
     }
 
     else{
-        resultsContainer.innerHTML = `You got ${numCorrect} out of ${quizQuestions.length} correct`;
+
+        removeQuiz()
+
+        removeGetResults()
+
+        resultsContainer.innerHTML = `<div id="lose-container">
+        <img id="lose-image" src="assets/images/game over.png" alt="A game over screen with the option to try again"  height="300">
+        <p id=lose-text>You got ${numCorrect} out of ${quizQuestions.length} correct</p>
+        </div>`;
+        
     }
  }
 
@@ -116,6 +140,20 @@ let quizQuestions = [
         },
 
         correctAnswer: "b",
+    },
+
+    {
+        question: "What is the name of Crash Bandicoot's sister?",
+
+        answers: {
+            a: "Coco",
+
+            b: "Cici",
+
+            c: "Cream"
+        },
+
+        correctAnswer: "a",
     },
 ];
 
