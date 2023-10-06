@@ -45,8 +45,30 @@ label {
     padding: 5px;
 }
 
-#submit {
+.get-results{
+    padding: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+button {
+    font-weight: 500;
+        padding: 15px 30px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #151b1b;
+}
+
+button:hover {
+    background-color: #20383f;
+    color: white;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    padding-bottom: 20px;
 }

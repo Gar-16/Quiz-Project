@@ -48,7 +48,13 @@ function showResults() {
         }
     );
 
-    resultsContainer.innerHTML = `${numCorrect} out of ${quizQuestions.length}`;
+    if(numCorrect === quizQuestions.length) {
+        resultsContainer.innerHTML = `Congrats! You got all ${quizQuestions.length} correct!`;
+    }
+
+    else{
+        resultsContainer.innerHTML = `You got ${numCorrect} out of ${quizQuestions.length} correct`;
+    }
  }
 
 
