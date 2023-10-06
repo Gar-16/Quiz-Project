@@ -13,12 +13,12 @@ When trying to think of what to code for my second project, I was quiet stumped.
 - __Questions with Radio Buttons__
   - Upon entering the quiz, the questions are visable immediatly with mulitple choice answers underneath.
 
-![Questions And Answers](Media/questions with answers.png)
+![Questions And Answers](Media/QuestionsWithAnswers.png)
 
 - __Submit Answers Button__
   - After selecting all answers to the questions, the user then can click the "Get Results" button to see how they did.
 
-![Submit Answers Button](Media/get results.png)
+![Submit Answers Button](Media/GetResults.png)
 
 - __Game Over Screen__
   - Once the user has submitted their answer, if the user did not get all answers correct they will get a game over screen. This image can be clicked to start again.
@@ -29,3 +29,4 @@ When trying to think of what to code for my second project, I was quiet stumped.
   - After the answers are submited, the results of the quiz will be shown and will be different depending on how many were correct.
 
 ![Results](Media/Results.png)
+![Results2](Media/results2.png)

@@ -40,46 +40,46 @@ function showResults() {
 
     let numCorrect = 0;
 
-    quizQuestions.forEach( (currentQuestion, questionNumber) => {
+    quizQuestions.forEach((currentQuestion, questionNumber) => {
         let answerContainer = answerContainers[questionNumber];
         let selector = `input[name=question${questionNumber}]:checked`;
         let userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-            if(userAnswer === currentQuestion.correctAnswer){
+        if (userAnswer === currentQuestion.correctAnswer) {
             numCorrect++;
 
             answerContainers[questionNumber].style.color = 'green';
-            }
-                else{
-                answerContainers[questionNumber].style.color = 'red';
-                }
         }
+        else {
+            answerContainers[questionNumber].style.color = 'red';
+        }
+    }
     );
 
-    if(numCorrect === quizQuestions.length) {
+    if (numCorrect === quizQuestions.length) {
 
-        removeQuiz()
+        removeQuiz();
 
-        removeGetResults()
+        removeGetResults();
 
         resultsContainer.innerHTML = `<div id="win-container">
         <img id="win-image" src="assets/images/imgbin_mario-png.png" alt="Image of Mario jumping in celebration"  height="300">
         <p id="win-text">Congrats! You got all ${quizQuestions.length} correct!</p>`;
     }
 
-    else{
+    else {
 
-        removeQuiz()
+        removeQuiz();
 
-        removeGetResults()
+        removeGetResults();
 
         resultsContainer.innerHTML = `<div id="lose-container">
         <a href="index.html"><img id="lose-image" src="assets/images/game over.png" alt="A game over screen with the option to try again"  height="300"></a>
         <p id="lose-text">You got ${numCorrect} out of ${quizQuestions.length} correct</p>
         </div>`;
-        
+
     }
- }
+}
 
 
 let quizContainer = document.getElementById('quiz');
@@ -94,7 +94,7 @@ let quizQuestions = [
 
             b: "Daisy",
 
-            c: "Wario"
+            c: "Wario",
         },
 
         correctAnswer: "a",
@@ -114,7 +114,7 @@ let quizQuestions = [
         correctAnswer: "c",
     },
 
-{
+    {
         question: "What is the name of the Kingdom where Princess Zelda and Link live?",
 
         answers: {
@@ -128,7 +128,7 @@ let quizQuestions = [
         correctAnswer: "c",
     },
 
-{
+    {
         question: "In which Pokemon game is Pikachu the starter pokemon?",
 
         answers: {
