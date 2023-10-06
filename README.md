@@ -19,3 +19,13 @@ When trying to think of what to code for my second project, I was quiet stumped.
   - After selecting all answers to the questions, the user then can click the "Get Results" button to see how they did.
 
 ![Submit Answers Button](Media/get results.png)
+
+- __Game Over Screen__
+  - Once the user has submitted their answer, if the user did not get all answers correct they will get a game over screen. This image can be clicked to start again.
+
+![Game Over Screen](Media/GameOverScreen.png)
+
+- __Results__
+  - After the answers are submited, the results of the quiz will be shown and will be different depending on how many were correct.
+
+![Results](Media/Results.png)
