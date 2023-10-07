@@ -45,3 +45,52 @@ When trying to think of what to code for my second project, I was quiet stumped.
   - No errors were returned when passing through the official Jigsaw validator
 
 ![CSS Validator Results](Media/CSSvalidated.png)
+
+### Lighthouse Testing
+
+![Lighthouse Index](Media/LighthouseTest.png)
+
+### Bugs
+
+![Bug2 Screenshot](Media/Responsivness.png)
+
+- Encountered a bug with the responsivness of of the site when viewed on mobile. Unfortunitley had great difficulty with fixing this and was unable to find the solution. 
+
+![Bug2 Screenshot](Media/AnswersTroubleshooting.png)
+
+- Encountered a bug while coding JavaScript where it would not accept "answers, eventually figured out that I was missing a comma after the questions string
+
+### Browser Compatibility
+
+- Site was built and works with Google Chrome
+
+- Site has been test and works with Microsoft Edge
+  
+- Site has been test and works with Firefox
+  
+- Site has been test and works with Opera
+
+# Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  
+  - From the source section drop-down menu, select the Master Branch
+  
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here: <https://gar-16.github.io/Quiz-Project/>
+
+# Credits
+
+## Content
+
+Some code for the quiz was taken from <https://simplestepscode.com/javascript-quiz-tutorial/>
+
+Some JavaScript was taken from <https://www.sitepoint.com/simple-javascript-quiz/>
+
+## Media
+
+Mario image is taken from [Imgbin](<https://imgbin.com/>)
+
+Game over image taken from [Pngimages](<https://www.pngimages.in/>) 
